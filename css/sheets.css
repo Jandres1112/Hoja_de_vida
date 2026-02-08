@@ -128,9 +128,31 @@ li {
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.4);
 }
 
-/* Responsivo: en pantallas pequeñas las columnas se apilan */
+
 @media (max-width: 768px) {
   .contenedor_info {
     flex-direction: column;
   }
 }
+
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; 
+    flex-direction: column;
+    background: #444;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 10px;
+  }
+
+  .nav-links.show {
+    display: flex; 
+  }
+
+  .menu-toggle {
+    display: block; 
+  }
+}
+
